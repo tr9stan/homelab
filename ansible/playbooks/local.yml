@@ -1,1 +1,20 @@
+---
+- name: Update and upgrade Ubuntu servers
+  hosts: all
+  become: true
 
+  tasks:
+    - name: Update package cache
+      apt:
+        update_cache: yes
+
+    - name: Install nala package
+      apt:
+        name: nala
+        state: present
+
+    - name: Upgrade all packages
+      apt:
+        upgrade: yes
+        autoremove: yes
+        autoclean: yes
