@@ -13,8 +13,13 @@
         name: nala
         state: present
 
-    - name: Upgrade all packages
-      apt:
-        upgrade: yes
-        autoremove: yes
-        autoclean: yes
+    - name: Append .bashrc file for all users
+      lineinfile:
+        path: "/home/{{ item }}/".bashrc
+        line: "echo '# package manager alias'"
+        line: "echo 'alias apt='nala'"
+        line: "# The white space after the o in sudo is intentional"
+        line: "alias sudo='sudo '"
+        create: yes
+        insertafter: EOF
+      with_fileglob: "/home/*"
