@@ -1,6 +1,7 @@
 ---
 - name: Update and upgrade Ubuntu servers
-  hosts: all
+  hosts: localhost
+  connection: local
   become: true
 
   tasks:
