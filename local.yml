@@ -1,7 +1,6 @@
 ---
 - name: Update and upgrade Ubuntu servers
   hosts: all #localhost
-  host_key_checking: false
   #connection: #local
   become: true
 
