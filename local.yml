@@ -2,14 +2,14 @@
 - name: Update and upgrade Ubuntu servers
   hosts: all #localhost
   #connection: #local
-  become_method: su
-  become_user: root
-  become_flags: '-s /bin/bash'
+  #become_method: su
+  #become_user: root
+  #become_flags: '-s /bin/bash'
 
   tasks:
-    #- name: Update package cache
-     # apt:
-      #  update_cache: yes
+    - name: Update package cache
+      apt:
+        update_cache: yes
 
     - name: Install nala package
       apt:
