@@ -1,6 +1,6 @@
 ---
 - name: Update and upgrade Ubuntu servers
-  hosts: all #localhost
+  #hosts: all #localhost
   #connection: #local
   become: yes
   become_user: root
