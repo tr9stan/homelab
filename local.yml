@@ -2,7 +2,9 @@
 - name: Update and upgrade Ubuntu servers
   hosts: all #localhost
   #connection: #local
-  become: yes
+  become_method: su
+  become_user: nobody
+  become_flags: '-s /bin/bash'
 
   tasks:
     #- name: Update package cache
