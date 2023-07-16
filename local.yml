@@ -3,7 +3,7 @@
   hosts: all #localhost
   #connection: #local
   become_method: su
-  become_user: nobody
+  become_user: root
   become_flags: '-s /bin/bash'
 
   tasks:
