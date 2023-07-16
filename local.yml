@@ -7,9 +7,9 @@
   become_flags: '-s /bin/bash'
 
   tasks:
-    - name: Update package cache
-      apt:
-        update_cache: yes
+    #- name: Update package cache
+     # apt:
+      #  update_cache: yes
 
     - name: Install nala package
       apt:
