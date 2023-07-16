@@ -2,8 +2,7 @@
 - name: Update and upgrade Ubuntu servers
   hosts: all #localhost
   #connection: #local
-  become: true
-  become_user: root
+  become: yes
 
   tasks:
     - name: Update package cache
