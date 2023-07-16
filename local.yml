@@ -3,6 +3,7 @@
   hosts: all #localhost
   #connection: #local
   become: yes
+  become_user: root
 
   tasks:
     #- name: Update package cache
