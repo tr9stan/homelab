@@ -9,7 +9,7 @@
       apt:
         update_cache: yes
 
-    - name: Install nala package
-      apt:
-        name: nala
-        state: present
+    #- name: Install nala package
+     # apt:
+      #  name: nala
+       # state: present
