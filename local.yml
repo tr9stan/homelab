@@ -5,11 +5,11 @@
   become: yes
 
   tasks:
-    - name: Update package cache
-      apt:
-        update_cache: yes
-
-    #- name: Install nala package
+    #- name: Update package cache
      # apt:
-      #  name: nala
-       # state: present
+      #  update_cache: yes
+
+    - name: Install nala package
+      apt:
+        name: nala
+        state: present
