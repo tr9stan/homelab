@@ -12,4 +12,3 @@
     - name: Install nala package
       apt:
         name: nala
-        state: present
