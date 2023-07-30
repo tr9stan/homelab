@@ -1,10 +1,6 @@
 ---
 - name: Update and upgrade Ubuntu servers
   hosts: all
-  #connection: local
-  become: true
-  become_method: sudo
-  become_user: root
 
   tasks:
     #- name: Update package cache
@@ -12,6 +8,7 @@
       #  update_cache: yes
 
     - name: Install nala package
+      become: yes
       apt:
         name: nala
         state: present
