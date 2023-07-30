@@ -10,4 +10,4 @@
     - name: Install nala package
       apt:
         name: nala
-        state: absent
+        state: present
