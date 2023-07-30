@@ -8,7 +8,6 @@
         update_cache: yes
 
     - name: Install nala package
-      become_user: root
       apt:
         name: nala
-        state: present
+        state: absent
