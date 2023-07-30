@@ -3,6 +3,7 @@
   hosts: all
   #connection: local
   become: yes
+  become_user: power
 
   tasks:
     #- name: Update package cache
@@ -12,3 +13,4 @@
     - name: Install nala package
       apt:
         name: nala
+        state: present
