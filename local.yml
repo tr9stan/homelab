@@ -3,7 +3,7 @@
   hosts: all
   #connection: local
   become: yes
-  become_user: power
+  become_method: sudo bash
 
   tasks:
     #- name: Update package cache
