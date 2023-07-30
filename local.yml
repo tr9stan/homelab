@@ -1,9 +1,9 @@
 ---
 - name: Update and upgrade Ubuntu servers
   hosts: all
-  become: true
-  become_method: su
-  become_user: root
+  #become: true
+  #become_method: su
+  #become_user: root
 
   tasks:
     - name: Update package cache
