@@ -2,9 +2,9 @@
 - name: Update and upgrade Ubuntu servers
   hosts: all
   #connection: local
-  become: yes
+  become: true
   become_method: su
-  become_user: power
+  become_user: root
 
   tasks:
     #- name: Update package cache
