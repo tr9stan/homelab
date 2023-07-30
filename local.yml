@@ -6,6 +6,7 @@
     - name: Update package cache
       apt:
         update_cache: yes
+        upgrade: yes
 
     - name: Install nala package
       apt:
