@@ -1,6 +1,8 @@
 ---
 - name: Update and upgrade Ubuntu servers
   hosts: all
+  sudo: true
+  sudo_user: root
 
   tasks:
     - name: Update package cache
