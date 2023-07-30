@@ -3,9 +3,9 @@
   hosts: all
 
   tasks:
-    #- name: Update package cache
-     # apt:
-      #  update_cache: yes
+    - name: Update package cache
+      apt:
+        update_cache: yes
 
     - name: Install nala package
       become_user: root
